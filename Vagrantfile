@@ -6,6 +6,10 @@ Vagrant.configure(2) do |config|
 	sudo apt-get -y install build-essential git ruby ruby-dev nodejs
 	sudo gem install github-pages
 	cd /vagrant
-	jekyll serve --detach
+	while [ "1" == "1" ]; do
+      jekyll serve --detach --drafts
+      sleep 2
+      pgrep -f jekyll | xargs kill -9
+    done
   SHELL
 end
