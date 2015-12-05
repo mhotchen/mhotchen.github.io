@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url(normalize.css);
+
+/* typography */
+pre,
+code,
+kbd {font: 100% Consolas, Monaco, Incolsolata, monospace;}
+
+body,
+textarea {font: 400 120%/1.6em Georgia, serif;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-family: 'Calibri', 'Helvetica Neue', sans-serif; font-weight: 800;}
+
+h1,
+h2,
+h3 {text-transform: uppercase;}
+
+abbr[title],
+acronym[title] {border-bottom: 0.1em dotted; cursor: help;}
+
+q {quotes: none;}
+q:before {content: "“";}
+q:after  {content: "”";}
+
+a {text-decoration: none;}
+a:hover, a:active, a:focus {outline: 0;}
+
+
+/* colors */
+body {color: darkslategray; background-color: ivory;}
+a {color: royalblue;}
+a:visited {color: cornflowerblue;}
+a:hover {color: crimson;}
+a:focus {color: brown;}
+
+
+/* layout */
+* {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+body {padding: 1em;}
+body > * {max-width: 80em; min-width: 20em; margin: 0 auto;}
+body > :first-child {margin-top: 2em;}
+body > article,
+body > section {min-height: 20em;}
+
+pre {margin: 0;}
+
+.inline {float: right;}
+
+
+/* sections */
+body > header {overflow: hidden}
+body > header * {font-size: 1em;}
+body > header h1 {float: left; margin-right: 2em;}
+body > header h1 a,
+body > header h1 a:visited {color: cadetblue;}
+body > header ul {float: left; list-style: none; margin: 0.67em 0; padding: 0;}
+body > header li {float: left; margin-right: 1em;}
+
+body > article {margin-bottom: 1em;}
+body > article > p:first-of-type {font-size: 0.8em;}
+body > article > p:first-of-type > time {font-style: italic;}
+
+body > footer {border-top: 0.1em solid wheat;}

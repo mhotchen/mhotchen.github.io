@@ -1,0 +1,6 @@
+name: "Divide by Zero"
+kramdown:
+  input: GFM
+highlighter: pygments
+port: 4000
+encoding: UTF-8
