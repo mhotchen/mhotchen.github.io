@@ -15,7 +15,7 @@ One specific subset of tools for BDD use a DSL called Gherkin (for example [Cucu
 
 ## Applying BDD to microservices
 
-In this article, I'll be focusing specifically on the Gherkin style BDD because because when applied to microservices it offers a few major wins:
+In this article, I'll be focusing specifically on the Gherkin style BDD because when applied to microservices it offers a few major wins:
 
 * It helps define the boundaries of your microservices
 * It gives developers a huge safety net
