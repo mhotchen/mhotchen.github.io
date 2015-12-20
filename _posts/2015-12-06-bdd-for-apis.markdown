@@ -3,8 +3,6 @@ layout: post
 title: "Behavior-driven development for microservices"
 ---
 
-## What is BDD?
-
 [Behavior-Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development) is a subset of [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) that focuses on verifying the behavior of a piece of software by using the terminology and language of the domain you're working in. Whilst TDD will often have elements of this, it usually isn't the focus. In some situations the 'best practice' for TDD means that you are verifying small individual pieces from a technical perspective, often missing out on testing whether the application behaves in the way the consumer/business wants.
 
 BDD is often confused with integration tests but they aren't the same thing (although boundaries are almost always crossed). An integration test can go from the high level "I make this request and I expect this response" to a much lower level style of unit testing wherein you mock the dependencies and verify that the dependencies are used correctly (for example you mock a database repository and verify that the unit you're testing will call the right method with the right parameters to get the object it should be working with). Martin Fowler has [an excellent article on the second style](http://martinfowler.com/articles/mocksArentStubs.html).
