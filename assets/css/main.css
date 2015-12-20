@@ -50,7 +50,7 @@ body > section {min-height: 20em; margin: 1em auto; border: 0.2em solid #000; bo
 
 pre {margin: 0;}
 
-.inline {float: right;}
+.inline {float: right; margin: 0.1em 0 0.1em 0.1em;}
 
 hr {height: 0; color: transparent; border-bottom: 0.1em solid #000;}
 
@@ -66,6 +66,6 @@ body > header ul {padding: 0; text-indent: 0; text-align: center;}
 body > header li {display: inline-block; margin-right: 1em;}
 body > header ul li:before {display: none;}
 
-body > article > * {clear: both;}
+body > article > * {clear: left;}
 body > article > p:first-of-type:first-letter {font: 400 600%/1em 'Cinzel Decorative', cursive; float: left; display: block; margin: 0.1em 0.2em 0.1em 0;}
 body > article > p:last-of-type {font-size: 0.8em; color: #444;}
