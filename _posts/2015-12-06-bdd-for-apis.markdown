@@ -11,7 +11,7 @@ BDD focuses on using language and terminology that closely aligns with the domai
 
 One specific subset of tools for BDD use a DSL called Gherkin (for example [Cucumber for Ruby](https://en.wikipedia.org/wiki/Cucumber_%28software%29)), which aims to be a more common language between the business and developers (much like user stories themselves).
 
-## Applying BDD to microservices
+## Applying bdd to microservices
 
 In this article, I'll be focusing specifically on the Gherkin style BDD because when applied to microservices it offers a few major wins:
 

@@ -47,11 +47,11 @@ This was a much bigger leap than the XMLHttpRequest in terms of functionality be
 
 Now we want push data from the server to the browser. There's an official standards for this, and implementations of WebSockets/Server-sent events already exist in most modern browsers (currently by Chrome, Firefox and IE10), but until people are no longer using IE9 or less, and until Opera has an up-to-date implementation, we're stuck using hacks. The most popular current techniques are referred to as Comet techniques:
 
-#### AJAX long polling
+#### Ajax long polling
 
 With this technique you would use javascript to make an AJAX request, with a really high timeout, then the server can keep that connection open and respond to it if anything needs pushed to the user. This technique isn't wise when using the popular Apache/PHP combo because not only will Apache dedicate a worker to the request for it's entire duration (which could be minutes if you're building something like a chat application), but there will also be a PHP process running for the duration of that request too.
 
-#### Flash XMLSocket
+#### Flash xmlsocket
 
 This is a little trickier to implement, but has a huge performance benefit. The gist of it is that it opens a TCP socket connection with the server, rather than a HTTP request, so you can use something lighter and more dedicated to the role to respond to the user (ie. not a web server). This method is popular with Flash based games and chat systems, because there isn't much in the way of overhead that you don't create yourself, and you can use anything from a Java applet to node.js to pick up the connection and respond from the server side, with a single instance running and listening to the port. The main downfall of this is that many server providers block most ports for security, so unless you're running a dedicated server or virtual server then you'll need to check that additional ports are actually available.
 
