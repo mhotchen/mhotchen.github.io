@@ -31,7 +31,7 @@ ol,
 ul {margin-left: 0; padding-left: 1em;}
 ol {list-style: lower-alpha;}
 ul {list-style: none; text-indent: -1em;}
-ul li:before {content: "\0BB"; width: 1em; display: block; float: left;}
+ul li:before {content: "»"; width: 1em; display: block; float: left;}
 
 /* colors */
 body {color: #000; background-color: #fff;}
@@ -56,7 +56,7 @@ hr {height: 0; color: transparent; border-bottom: 0.1em solid #000;}
 
 
 /* sections */
-body > header h1 {font-size: 400%; line-height: 0; text-align: center;}
+body > header h1 {font-size: 400%; margin: 0; text-align: center;}
 body > header h1 a,
 body > header h1 a:visited,
 body > header h1 a:hover {color: crimson;}
@@ -67,5 +67,5 @@ body > header li {display: inline-block; margin-right: 1em;}
 body > header ul li:before {display: none;}
 
 body > article > * {clear: left;}
-body > article > p:first-of-type:first-letter {font: 400 600%/1em 'Cinzel Decorative', cursive; float: left; display: block; margin: 0.1em 0.2em 0.1em 0;}
+body > article > p:first-of-type:first-letter {font: 400 600%/0.8em 'Cinzel Decorative', cursive; float: left; display: block; margin: 0.1em 0.2em 0 0;}
 body > article > p:last-of-type {font-size: 0.8em; color: #444;}
