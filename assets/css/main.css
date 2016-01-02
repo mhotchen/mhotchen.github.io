@@ -70,3 +70,7 @@ body > article > * {clear: left;}
 body > article > .highlight {clear: both;}
 body > article > p:first-of-type:first-letter {font: 400 600%/0.8em 'Cinzel Decorative', sans-serif; float: left; display: block; margin: 0.1em 0.2em 0 0;}
 body > article > p:last-of-type {font-size: 0.8em; color: #444;}
+
+body > section nav ul {text-indent: 0;}
+body > section nav li:before {content: none; display: none; width: 0;}
+body > section .post-date {color: #444; font-size: 0.6em; display: block; float: left; text-align: right; width: 11em; padding-right: 1em;}
