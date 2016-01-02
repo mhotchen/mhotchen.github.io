@@ -45,15 +45,15 @@ Custom session handlers
 
 PHP makes it quite easy to build a custom session handler that works seamlessly with your existing sessions: [session\_set\_save\_handler](//php.net/session_set_save_handler). All you need is a session opener, a session closer, a session reader, a session destroyer and a session garbage collector. It's actually surprisingly simple. PHP 5.4 even comes with [a handy interface](//www.php.net/manual/en/class.sessionhandlerinterface.php) and [a concrete implementation](//www.php.net/manual/en/class.sessionhandler.php) to get you started.
 
-Additionally Symfony has [a few bundled session handlers](//symfony.com/doc/current/components/http_foundation/session_configuration.html) ([githubsource](https://github.com/symfony/symfony/tree/master/src/Symfony/Component/HttpFoundation/Session/Storage/Handler)) for you to either use or to help get you started. As of writing this though, the Symfony session handlers are quite basic, and lack features like session locking, or any kind of resiliency for when your session storage service inevitably goes down.
+Additionally Symfony has [a few bundled session handlers](//symfony.com/doc/current/components/http_foundation/session_configuration.html) ([github source](https://github.com/symfony/symfony/tree/master/src/Symfony/Component/HttpFoundation/Session/Storage/Handler)) for you to either use or to help get you started. As of writing this though, the Symfony session handlers are quite basic, and lack features like session locking, or any kind of resiliency for when your session storage service inevitably goes down.
 
 ### Session locking
 
-<img src="/assets/posts/session-overwrite-example.png" class="inline" alt="What happens when session locking isn't enabled" />
+<img src="/assets/posts/session-override.png" class="inline" alt="Without locking the session can be overwritten" />
 
 One important and often forgotten part of sessions is locking. A user should not be able to have 2 sessions open simultaneously. The reason for this is that if you open a long-running request, then a second request comes along, writes to the session then closes, then the first request writes to the session then closes, you just lost all of the data from the second request. What should happen (and what happens with the default session handler) is when the first request has opened the session file, the second request should wait until the first request has closed the session before it begins working with it.
 
-A basic demonstration of locking:
+A naive demonstration of locking:
 
 {% highlight php %}
 {% raw %}
@@ -61,7 +61,7 @@ A basic demonstration of locking:
 // in session open handler
 $lockKey = "lock-$sessionId";
 while (file_exists("_sessions/$lockKey")) {
-    usleep(200);
+    usleep(10);
 }
 
 touch("_sessions/$lockKey"); // now we have the lock
@@ -72,6 +72,10 @@ unlink("_sessions/$lockKey");
 {% endraw %}
 {% endhighlight %}
 
-Now, you must make sure that no matter what your PHP does, it executes the unlocking, or else your user will not be able to open a session. [register\_shutdown\_function](//php.net/register_shutdown_function) is built for exactly this type of scenario. Also note that the code outlined above is a guide, it relies on the file system which means the lock won't be accessible from other servers. Depending on your setup, storing the lock in Memcache is a good option, or some other in-memory caching system, because it's generally used for short periods (ie. the length of a request). You should also add some extra testing to make sure you don't end up waiting on the lock forever.
+<img src="/assets/posts/session-with-locking.png" class="inline" alt="With locking we can see that the session isn't overwritten" />
 
-PHP by default will wait for a session lock indefinitely. In the example above the PHP script will wait for a long time to get a session lock, far surpassing the max execution time set, because `usleep` (and `sleep`) do not count towards the length of time the PHP script has been executing for. From experience this is a mixed bag, because whilst it does guarantee data integrety, you're also far more likely to end up with a session permanently locked (or locked for an extremely long time) when you're dealing with networking and databases.
+The above is a less robust version of what `flock` does on the file system which is what PHP relies on under the hood. You would probably want to use something else that's shared across your infrastructure such as memcache or redis for storing your session lock.
+
+You must ensure that no matter what your PHP does, it executes the unlocking or else your user will not be able to open a session on subsequent requests. [register\_shutdown\_function](//php.net/register_shutdown_function) is built for exactly this type of scenario.
+
+PHP by default will wait for a session lock indefinitely. In the example above the PHP script will wait for a long time to get a session lock, far surpassing the max execution time set because `usleep` (and `sleep`) do not count towards the length of time the PHP script has been executing for. Due to the nature of network volatility an eventual exit path and a TTL on the lock are highly recommended to make sure users aren't locked out of their session indefinitely if a script fails to unlock properly.
