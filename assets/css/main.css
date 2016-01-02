@@ -15,7 +15,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {font-family: 'Cinzel Decorative', cursive; line-height: 1.2em;}
+h6 {font-family: 'Cinzel Decorative', sans-serif; line-height: 1.2em;}
 
 abbr[title],
 acronym[title] {border-bottom: 0.1em dotted; cursor: help;}
@@ -67,5 +67,6 @@ body > header li {display: inline-block; margin-right: 1em;}
 body > header ul li:before {display: none;}
 
 body > article > * {clear: left;}
-body > article > p:first-of-type:first-letter {font: 400 600%/0.8em 'Cinzel Decorative', cursive; float: left; display: block; margin: 0.1em 0.2em 0 0;}
+body > article > .highlight {clear: both;}
+body > article > p:first-of-type:first-letter {font: 400 600%/0.8em 'Cinzel Decorative', sans-serif; float: left; display: block; margin: 0.1em 0.2em 0 0;}
 body > article > p:last-of-type {font-size: 0.8em; color: #444;}
