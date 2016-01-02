@@ -34,7 +34,9 @@ ul {list-style: none; text-indent: -1em;}
 ul li:before {content: "»"; width: 1em; display: block; float: left;}
 
 /* colors */
-body {color: #000; background-color: #fff;}
+body {color: black; background-color: white;}
+::selection {background: brown; color: white;}
+::-moz-selection {background: brown; color: white;}
 a {color: royalblue;}
 a:visited,
 a:focus {color: brown;}
