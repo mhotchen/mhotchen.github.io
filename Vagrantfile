@@ -1,5 +1,6 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "debian/jessie64"
+  config.vm.box_version = "8.2.1" # unfortunately in 8.2.2 they made the default file sync rsync, and you can't change it back to virtualbox
   config.vm.network "forwarded_port", guest: 4000, host: 4000
   config.vm.provision "shell", inline: <<-SHELL
 	sudo apt-get update
