@@ -29,10 +29,10 @@ As a rich user I want to get a 5% off discount voucher when I spend more than $1
 
 #### Acceptance criteria
 
-* If I spend up to and including $1,000 do I receive no vouchers?
-* If I spend more than $1,000 do I receive a 5% off voucher to use on my next purchase?
-* Is the voucher valid forever?
-* Is the voucher valid immediately?
+* I should receive no vouchers if I spend up to and including $1,000
+* I should receive a voucher for 5% off an order when I spend more than $1,000
+* The voucher must be valid forever
+* The voucher must be redeemable immediately after the order has been placed
 
 ---
 
