@@ -3,7 +3,7 @@ layout: post
 title: "Be vulnerable"
 ---
 
-In this article I want to define what it is to be vulnerable, discuss why you should be vulnerable, and outline some initial steps on how to become more vulnerable. Most of the examples and advice is based on my own personal experience, wherein I've spent an increasing amount of my energy over the past 3 years focusing on ensuring I show vulnerability.
+In this article I want to define what it is to be vulnerable and discuss why you should be vulnerable. Most of the examples and advice is based on my own personal experience, wherein I've spent an increasing amount of my energy over the past 3 years focusing on ensuring I show vulnerability.
 
 ## What it means to "be vulnerable"
 
