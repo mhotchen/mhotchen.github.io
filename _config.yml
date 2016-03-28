@@ -1,6 +1,6 @@
 name: "Divide by Zero"
 kramdown:
   input: GFM
-highlighter: pygments
+highlighter: rouge
 port: 4000
 encoding: UTF-8
