@@ -1,0 +1,10 @@
+#!/bin/bash
+
+lxc launch ubuntu:x blog
+lxc config device add blog sharedtmp disk path=/srv source=$PWD
+
+lxc exec blog -- apt install -y ruby ruby-dev gems build-essential libxml2 libxml2-dev zlibc zlib1g-dev
+lxc exec blog -- gem install github-pages
+lxc exec blog -- start-stop-daemon --background --exec /usr/local/bin/jekyll --start -- serve --source /srv
+
+lxc info blog

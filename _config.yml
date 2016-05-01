@@ -2,5 +2,6 @@ name: "Divide by Zero"
 kramdown:
   input: GFM
 highlighter: rouge
-port: 4000
+host:
+port: 80
 encoding: UTF-8
