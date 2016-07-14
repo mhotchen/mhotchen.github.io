@@ -6,7 +6,7 @@
 /* typography */
 pre,
 code,
-kbd {font: 100% Consolas, Monaco, Incolsolata, monospace;}
+kbd {font: 85% Consolas, Monaco, Incolsolata, monospace;}
 
 html {font: 400 110%/1.4em 'PT Serif', serif; text-rendering: optimizeLegibility;}
 
