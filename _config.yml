@@ -2,6 +2,6 @@ name: "Divide by Zero"
 kramdown:
   input: GFM
 highlighter: rouge
-host:
+host: blog.lxd
 port: 80
 encoding: UTF-8
