@@ -7,7 +7,9 @@ In text editors/IDEs line numbers feel like an obvious and intuitive system that
 
 The first alternative I saw was in vim. It has a feature called [relative line numbers](http://vimdoc.sourceforge.net/htmldoc/options.html#%27relativenumber%27), which will tell you how far away all the other lines in the file are from the current cursor position. This is very powerful in vim because a typical vim workflow will involve repeating commands over lines (for example to delete several lines at once, or for jumping ahead/back when navigating) but this isn't very helpful in situations outside of vim or vim-like editors. This doesn't completely replace traditional line numbers but rather acts to compliment them. You can see the actual line you're on in the status bar, and you can still navigate to an exact line number if given one (:83 to go to line 83 for example).
 
-My alternative proposal, which I'll call "list line numbers" would aim to achieve something similar, it would aim to compliment traditional line numbers rather than act as a full replacement. So what is "list line numbers" you ask?
+The purpose of this article is to show a new numbering system I "invented" over the weekend. I don't think this is a revolution, but it could be a helpful tool for quickly gaining information about a source code file. I've called this new line numbering system "list line numbers".
+
+# "List line numbers"
 
 For each level of indentation, a new line number set is given for that level, separated by a period/dot from the previous indentation's number. For example given the following code:
 
@@ -53,11 +55,9 @@ The first line would be labeled "1", the next line, because it's indented, would
 2         | fizzbuzz(range(1, 101))
 {% endhighlight %}
 
-As you can observe it gets pretty lengthy pretty easily. There are two primary benefits to this line numbering system:
+As you can see it's lengthier than traditional line numbers, but it does provide some information that traditional line numbers wouldn't at a glance:
 
-1. It becomes abundantly clear where the complexity lies, just from the line numbers. On larger files, without even having to read the source you can see where refactoring effort should be focused.
+1. It becomes easier to see where the complexity lies (around 1.3.2-1.3.3), just from the line numbers. On larger files, without even having to read the source you can see where refactoring effort should be focused.
 2. It promotes a flatter structure (which compliments the first exercise in [object calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)).
 
-So that's it. This isn't a revolution, just a small proposal for giving software developers a very quick and rough guide to the complexity of their code. [Here's a rough implementation](https://github.com/mhotchen/line-steps).
-
-As an additional take away from this article I want developers to occasionally look at things that are a given, for example text editors, HTTP, etc. and see if you can find a small twist on these fundamentals. It's worth challenging pretty much anything because at the very least it means you have a stronger understanding of the existing solutions.
+So that's it. By using indentation to pack a little more information in to line numbers you can get a quick visual cue of what the state of a source file is. [Here's a rough implementation](https://github.com/mhotchen/line-steps) written in C++.
