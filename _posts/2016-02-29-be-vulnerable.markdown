@@ -22,4 +22,4 @@ The way people interact with you changes when you become more comfortable exposi
 
 Another way that this has affected how people view me is that I'm considered a natural leader. My personal experience tells me that a strong leader isn't someone who keeps many secrets or lets their ego control the path, but rather it's someone who exposes the path they want to go on, and lets others critique and adjust as necessary. It's a necessary skill to be able to admit when you don't know the answer and let others help you find it.
 
-In conclusion being more vulnerable has given me closer friends, more control over my career, and more fulfilment from my hobbies. The difference in how happy I am with my life now in comparison to three years ago is incomparable.
+Being more vulnerable has given me closer friends, more control over my career, and more fulfilment from my hobbies. The difference in how happy I am with my life now in comparison to three years ago is incomparable.
