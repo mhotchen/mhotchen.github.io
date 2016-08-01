@@ -1,8 +1,10 @@
 #!/bin/bash
 
+lxc delete blog --force
 lxc launch ubuntu:x blog
 lxc config device add blog sharedtmp disk path=/srv source=$PWD
 
+sleep 5
 lxc exec blog -- apt install -y ruby ruby-dev gems build-essential libxml2 libxml2-dev zlibc zlib1g-dev
 lxc exec blog -- gem install github-pages
 lxc exec blog -- mkdir /root/site
