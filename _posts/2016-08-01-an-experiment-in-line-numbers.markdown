@@ -60,4 +60,4 @@ As you can see it's lengthier than traditional line numbers, but it does provide
 1. It becomes easier to see where the complexity lies (around 1.3.2-1.3.3), just from the line numbers. On larger files, without even having to read the source you can see where refactoring effort should be focused.
 2. It promotes a flatter structure (which compliments the first exercise in [object calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)).
 
-So that's it. By using indentation to pack a little more information in to line numbers you can get a quick visual cue of what the state of a source file is. [Here's a rough implementation](https://github.com/mhotchen/line-steps) written in C++.
+So that's it. By using indentation to pack a little more information in to line numbers you can get a quick visual cue of what the state of a source file is. [Here's a rough implementation](https://github.com/mhotchen/line-steps) written in C.
