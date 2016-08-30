@@ -44,4 +44,4 @@ An API should be rigid in its implementation to avoid breaking consumers. An API
 
 JSON over HTTP provides a way of implementing a good API. There are good specifications for designing such an API such as [json:api](http://jsonapi.org/), and good tools for building the documentation and making it easy for consumers to understand such as [swagger](http://swagger.io/). Many libraries and frameworks exist for both clients and servers for building and consuming such APIs rapidly and correctly. Although APIs built like this *aren't* REST they are useful.
 
-So stop implementing REST APIs and start implementing something JSON over HTTP. There are many other perfectly valid choices as well such as [Apache Thrift](https://thrift.apache.org/) although JSON over HTTP is likely to be the easiest one to implement both on the server and as a consumer.
+So stop trying to build REST APIs and start building APIs using JSON over HTTP. There are many other perfectly valid choices as well, such as [Apache Thrift](https://thrift.apache.org/), although JSON over HTTP is likely to be the easiest one to implement both on the server and as a consumer.
