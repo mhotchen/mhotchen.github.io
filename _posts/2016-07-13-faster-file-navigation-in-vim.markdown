@@ -3,7 +3,7 @@ layout: post
 title: "Faster file navigation in vim"
 ---
 
-When using vim most noobies will struggle with working with multiple files in a directory, and most more experienced users will use a tree navigation plugin like NERDTree. In modern times I've all but stopped using directory trees since most modern editors include convenient shortcuts for searching for and opening files quickly. For example when using IntelliJ on Ubuntu you can type `<ctrl>+<shift>+N` to bring up a search box for searching for files in the project. Vim does in fact support this sort of file navigation without the need for plugins.
+When using vim most newbies will struggle to work with multiple files in a directory, and experienced users will typically use a tree navigation plugin like NERDTree. In modern times I've all but stopped using directory trees since most modern editors include convenient shortcuts for searching for and opening files quickly. For example when using IntelliJ on Ubuntu you can type `<ctrl>+<shift>+N` to bring up a search box for searching for files in the project. Vim does in fact support this sort of file navigation without the need for plugins.
 
 ## Include nested directories in the path
 
