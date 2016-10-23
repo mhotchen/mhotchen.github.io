@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Pursuit of wealth"
+---
+
+I had an interesting conversation with a fellow programmer recently who flat out told me they're disappointed because I'm interested in pursuing wealth. This is a common theme that I've noticed in programmers, that I should almost feel ashamed that my career goals include a lot of money. I've heard from a handful of programmers that working on interesting projects should be my ultimate pursuit.
+
+So it should be obvious why I'm pursuing money. Having a larger disposable income means I'm less likely to end up in debt and I can enjoy hobbies such as travelling which would otherwise be cost prohibitive. I can do that and still save for my future. I can invest in myself. I can have the time to start my own company. The more money I have, the easier life becomes. If programming were to stop affording me these luxuries then I would do something else with my career. Programming is fun, but so is design, so is working on bicycles, writing, carpentry, playing with circuitry, you get the point.
+
+There shouldn't be a stigma against any reason that someone's a programmer, or against their goals. If they want to move to management, want more money, or even if they hate the job completely and want out, what's important is how good they are at the job. I've met many passionate programmers who do more harm than good, and I've met plenty of 9-5ers with a family who fell in to programming that churn out high quality software. I worked with one dispassionate programmer who was excellent. He nearly left the whole career, despite the alluring salaries and work conditions. But even though he didn't have much of a passion for programming his code was consistent in its quality.
+
+When I was stacking shelves at a supermarket for a living I hated it, yet I still did it to the best of my abilities. [Check out how good these cleaners are](https://www.youtube.com/watch?v=rFXi1cM9vO0) at cleaning the Shinkansen trains in Japan. Do you think they're that good because they're only interested in doing interesting work? Do you think they're passionate about cleaning trains? No, they simply take pride in what they do, regardless of what their reasons are for doing it in the first place.
+
+Being blinded by any one pursuit can be dangerous. If you only want to work on interesting projects then you could end up doing the company you work for a disservice by not taking the boring route, or by effectively refusing to do your work. If you're only interested in wealth then you could end up trying to throw your team under a bus, or making the workplace political and toxic. Have your agenda, but take pride in what you do. Grind out a boring project from time-to-time, look after your team mates, and try your best to build something you can be proud of whilst working towards your goals.
