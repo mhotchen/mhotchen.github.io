@@ -7,7 +7,7 @@ As DeMarco & Lister observed when researching for Peopleware, and Brooks observe
 
 The majority of people think they're above average listeners. This is also true of driving; most people will think they're an above average driver. So if you're reading this and think you're an above average listener then there's a very real possibility that you're wrong. So, what are some techniques that you can apply to become a better listener?
 
-First, quell the myth that being a good listener means not talking. Listening&mdash;actually lisening instead of just hearing what someone's saying&mdash;involves trying to understand what someone is talking about. It's rare that you can do that without asking questions.
+First, quell the myth that being a good listener means not talking. Listening&mdash;actually listening instead of just hearing what someone's saying&mdash;involves trying to understand what someone is talking about. It's rare that you can do that without asking questions.
 
 So ask questions. Even if you think you understand a point, ask to make sure. Try asking about different scenarios, different people.
 
