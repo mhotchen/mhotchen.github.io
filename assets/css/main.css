@@ -50,7 +50,8 @@ body > :first-child {margin-top: 2em;}
 body > article,
 body > section {min-height: 20em; margin: 1em auto; border: 0.2em solid #000; border-left: 0; border-right: 0;}
 
-pre {margin: 0;}
+pre,
+figure {margin: 0;}
 
 .inline {float: right; margin: 0.1em 0 0.1em 0.1em;}
 
