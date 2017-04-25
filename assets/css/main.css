@@ -1,21 +1,21 @@
 @charset "UTF-8";
 
 @import url(normalize.css);
-@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative|PT+Serif);
+@import url(https://fonts.googleapis.com/css?family=Muli:600|Ovo);
 
 /* typography */
 pre,
 code,
 kbd {font: 85% Consolas, Monaco, Incolsolata, monospace;}
 
-html {font: 400 100%/1.4em 'PT Serif', serif; text-rendering: optimizeLegibility;}
+html {font: 400 100%/1.3em 'Ovo', serif; }
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {font-family: 'Cinzel Decorative', sans-serif; line-height: 1.2em;}
+h6 {font-family: 'Muli', sans-serif; line-height: 1.2em; font-weight: normal; text-align: center; text-transform: uppercase;}
 
 abbr[title],
 acronym[title] {border-bottom: 0.1em dotted; cursor: help;}
@@ -70,7 +70,7 @@ body > header ul li:before {display: none;}
 
 body > article > * {clear: left;}
 body > article > .highlight {clear: both;}
-body > article > p:first-of-type:first-letter {font: 400 600%/0.8em 'Cinzel Decorative', sans-serif; float: left; display: block; margin: 0.1em 0.2em 0 0;}
+body > article > p:first-of-type:first-letter {font-size: 400%; float: left; display: block; margin: 0.1em 0.1em 0 0;}
 body > article > p:last-of-type {font-size: 0.8em; color: #444;}
 
 body > section nav ul {text-indent: 0;}
