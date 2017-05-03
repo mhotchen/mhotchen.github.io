@@ -11,7 +11,9 @@ The example scenario that we'll be developing is thus:
 
 Clients want to be able to send a payload with a list of VIN codes (vehicle identification numbers) as JSON or XML and expect a response containing the VIN with the price and the year the vehicle was manufactured, in the format they sent the payload in. Two example requests and responses would be:
 
-#### Request
+#### JSON
+
+Request
 
 {% highlight json %}
 [
@@ -20,7 +22,7 @@ Clients want to be able to send a payload with a list of VIN codes (vehicle iden
 ]
 {% endhighlight %}
 
-#### Response
+Response
 
 {% highlight json %}
 [
@@ -37,9 +39,9 @@ Clients want to be able to send a payload with a list of VIN codes (vehicle iden
 ]
 {% endhighlight %}
 
-Or as XML:
+#### XML
 
-#### Request
+Request
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +51,7 @@ Or as XML:
 </vehicles>
 {% endhighlight %}
 
-#### Response
+Response
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -417,13 +419,13 @@ final class IocContainer
 }
 {% endhighlight %}
 
-I want to stress the importance of using a proper IoC system like Pimple, PHP-DI, Aura.Di, etc. because these allow a much clearer separation of concerns with subsystem and modules being separated clearly.
+I want to stress the importance of using a proper IoC system like Pimple, PHP-DI, Aura.Di, etc. because these allow for a clear separation of concerns with features like modules and autowiring.
 
-By using an IoC container it means the object graph can vary depending on, well, anything. The most useful case is for unit testing versus running the application. We can add stub strategies to our tests that always return a desired result, create an IsType class that always returns false to test failure scenarios, and so forth.
+By using an IoC container it means the object graph can vary depending on, well, anything. The most useful case is for unit testing versus running the application. We can for example add stub strategies to our tests that always return a desired result, create an IsType class that always returns false to test failure scenarios, and so forth.
 
 ## Using it
 
-Finally, we need to use it. I'm going to create some non-existent classes in the following code, some pseudo request/response objects that would be found in a typical framework, and a repository for looking up the actual vehicles in. Here is what the controller might look like:
+Finally, we need to use it. I'm going to use some non-existent classes in the following code; some pseudo request/response objects that would be found in a typical framework and a repository for looking up the actual vehicles in. Here is what the controller might look like:
 
 {% highlight php %}
 <?php
