@@ -1,0 +1,14 @@
+---
+layout: post
+title: Final
+---
+
+Another evening another article. Tonight I want to talk about the rarely used but extremely useful `final` keyword in many C-like languages.
+
+The final keyword guarantees that the given object or method cannot be extended. I remember when I first started programming I would always use the `protected` keyword for methods just in case someone wanted to modify it through inheritance but over the years I've learnt that not understanding how your code should be modified means you don't have a clear design. So let's start there then move in to `final`.
+
+By using `protected` it obviously means you allow overriding in children. Initially I misunderstood the difference between _allowing_ and _expecting_. Rather, you should only use the `protected` keyword for things you _expect_ to be overriden and use `private` everywhere else. If your design necessitates that a child class calls a protected method on the parent then you should rethink your design. You would likely be better served by calling an abstract method that the child class then implements. Why? Because it allows you to refactor the internals of your objects safely without fear of breaking things outside of a very narrow scope. Realistically, protected should only be used in abstract classes.
+
+The final keyword when it comes to classes forces composition over inheritance. By having a flat hierarchy you get the benefit of creating new objects that take in other objects when you want to _extend_ behavior. See (/2017/04/20/solid-by-example.html)[my post on SOLID] to get a clearer view of the open/closed principle. It also naturally moves your design towards dependency inversion since you'll need to start injecting behaviour in order to reuse it.
+
+Finally, it clarifies intent. By saying a class is either abstract or final, it means other developers know exactly what they should and shouldn't extend.
