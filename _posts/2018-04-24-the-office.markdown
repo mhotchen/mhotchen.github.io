@@ -3,9 +3,7 @@ layout: post
 title: The Office
 ---
 
-Hi, my name's Matthew and I'm not a workaholic.
-
-Our industry has a problem. It expects us to spend too long on our asses in jobs that can sometimes take as little time as an hour in a week to achieve. It expects us to follow a corporate standard because a CXO is scared that if you aren't there you aren't working. The truth is I never stop working. I solve problems in my sleep, in the shower, whilst watching movies.
+Hi, my name's Matthew and I'm not a workaholic. Our industry has a problem. It expects us to spend too long on our asses in jobs that can sometimes take as little time as an hour in a week to achieve. It expects us to follow a corporate standard because a CXO is scared that if you aren't there you aren't working. The truth is I never stop working. I solve problems in my sleep, in the shower, whilst watching movies.
 
 On top of this we're expected to spend a sizable chunk of our free time learning and contributing to open source. When I'm forced to sit in an office for nine hours a day using a computer upon which the company has full rights to anything I create, plus commute time, there's very little time in my life for that. I do try, but I don't have the time in my life to commit to a real project, despite desperately wanting to.
 
