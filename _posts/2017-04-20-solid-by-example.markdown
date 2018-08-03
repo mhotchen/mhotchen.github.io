@@ -513,7 +513,7 @@ interface Strategy
     public function getWriter(): VehicleWriter;
 }
 
-class AcceptHeaderJsonStrategy
+class AcceptHeaderJsonStrategy implements Strategy
 {
     private $writer;
 

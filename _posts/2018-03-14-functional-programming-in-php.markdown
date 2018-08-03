@@ -19,7 +19,7 @@ PHP doesn't have a list type, at least not one that's built in to the actually u
 
 ## Recursion
 
-Without tail call optimization you're not really able to apply another primary principle in functional programming: recursion. Recursion on lists when you don't have lists and have a very rapidly growing memory footprint?
+Without tail call optimization you're not really able to apply another primary principle in functional programming: recursion. Recursion on lists when you don't have lists and have a very rapidly growing memory footprint as each recurive call creates a new stack? That's a paddlin'.
 
 ## Any other goodies?
 

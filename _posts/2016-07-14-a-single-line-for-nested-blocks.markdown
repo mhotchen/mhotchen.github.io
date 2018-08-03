@@ -5,7 +5,7 @@ title: "A single line for nested blocks"
 
 I think all programmers have their own stylistic choices. All programmers working on software read by other people will know to keep their own opinions in check and to adapt a popular formatting scheme for the languages given. So with that in mind I don't recommend the following as more than food for thought, or possibly as something to adapt for personal projects.
 
-When learning scala I picked up on some stylistic choices in that language that make it valuable to often have multiple block-level statements on a single like:
+When learning scala I picked up on some stylistic choices in that language that make it valuable to often have multiple block-level statements on a single line like:
 
 {% highlight scala %}
 for (c <- chunks; l <- c.lines) l match {
